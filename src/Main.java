@@ -80,7 +80,7 @@ public class Main {
         int yearPercent = 12;
         int mounthPercent = yearPercent / 12;
         for (int i = 0; i < 13; i++) {
-            total = total + total / 100;
+            total = total + total * mounthPercent / 100;
             total = total + mounthSaving;
             System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей.");
         }
